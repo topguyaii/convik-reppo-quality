@@ -1,0 +1,23 @@
+{
+  "name": "convik-reppo-quality",
+  "version": "0.1.0",
+  "description": "An agent graded twice, by its peers and by the market. Six learning loops on Reppo's Evaluation API and SERV Reasoning.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.4",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
